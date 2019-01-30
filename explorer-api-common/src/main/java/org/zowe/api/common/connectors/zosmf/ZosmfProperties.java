@@ -9,6 +9,7 @@
  */
 package org.zowe.api.common.connectors.zosmf;
 
+import lombok.Builder;
 import lombok.Data;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -16,6 +17,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Configuration;
 
 @Data
+@Builder
 @Configuration
 @EnableConfigurationProperties
 @ConfigurationProperties("zosmf")
